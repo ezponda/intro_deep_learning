@@ -1,0 +1,14 @@
+numpy
+scipy
+jupyter
+matplotlib
+Pillow
+scikit-learn
+tensorflow
+pandas
+opencv-python
+notebook
+jupyter_contrib_nbextensions
+pydot
+graphviz
+pydotplus
