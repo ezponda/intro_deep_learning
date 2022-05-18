@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 .DS_Store
 
-# Pycharm
-.idea
+# Don't store notebook changes when running locally
+# Comment when changes to notebooks want to be kept
+*.ipynb
