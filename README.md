@@ -31,6 +31,20 @@ To install all the dependencies, run:
 pip install -r requirements.txt
 ```
 
+### Docker
+
+Another alternative is to use docker.  
+To do so, first install [Docker](https://www.docker.com/) on your computer.  
+Then, on a terminal from this same path, build the image:
+```
+docker build -t deep_learning .
+``` 
+This will create a docker image named `deep_learning`. Now you can spin up a container from it.  
+This container is ready to launch a Jupyter lab session with everything installed.  
+```
+docker run -it -p 8888:8888 -v $PWD:/app deep_learning
+```
+
 ### Google Colab
 
 You can upload the notebook directly in [Google Colab](https://colab.research.google.com/) or you can click in the Colab icon at the beginning of each notebook:
