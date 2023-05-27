@@ -51,4 +51,48 @@ You can upload the notebook directly in [Google Colab](https://colab.research.go
   <td align="center">
         <img src="https://i.ibb.co/xfJbPmL/github.png"  height="70px" style="padding-bottom:5px;"  />View Source on GitHub</a></td>
 </table>
+
+### Running with Docker
+In addition to running the notebooks locally or on Google Colab, you can also run them in a [Docker]((https://www.docker.com/)) container. This ensures that all dependencies are satisfied in a self-contained environment, which can make it easier to get up and running with the project.
+
+Follow these steps to build and run the Docker image:
+
+
+#### Pre-requisites
+
+Install Docker on your machine. You can download it for Mac, Windows, or Linux from the [official Docker website](https://www.docker.com/products/docker-desktop).
+
+
+#### Building the Docker Image
+
+Open your terminal, navigate to the directory containing the Dockerfile and run the following command to build the Docker image:
+
+```shell
+docker build -t deep-learning-course .
+```
+This command builds an image and tags it as "deep-learning-course".
+
+
+#### Running the Docker Image
+
+Run the Docker image with the following command:
+
+```shell
+docker run -p 4000:8888 deep-learning-course
+```
+
+To persist your changes and have your notebooks saved outside of Docker (on Windows, you might have to replace
+`$(pwd)` with `${pwd}` or with the full path to your directory):
+
+```shell
+docker run -p 4000:8888 -v "$(pwd)":/app deep-learning-course
+```
+
+
+This command maps the port 8888 inside Docker as port 4000 on your machine.
+
+
+#### Accessing the Notebooks
+
+Once your Docker image is up and running, you can access the Jupyter notebooks by visiting [http://localhost:4000](http://localhost:4000) in your web browser. You'll see a list of notebooks that you can click on to view, run, and interact with.
     
