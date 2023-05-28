@@ -2,6 +2,11 @@
 
 Welcome to the GitHub repository for the Practical Deep Learning Course. Here you will find all the code, notebooks, and resources used throughout the course.
 
+## Table of Contents
+
+- [Repository Content](#repository-content)
+- [How to Run the Code](#how-to-run-the-code)
+
 
 ## Repository Content
 
