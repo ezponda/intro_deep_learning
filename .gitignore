@@ -129,11 +129,5 @@ dmypy.json
 .pyre/
 .DS_Store
 
-# Don't store notebook changes when running locally
-# Comment when changes to notebooks want to be kept
-#*.ipynb
-
-# JetBrains IDEs
-.idea/
-
-**/torch/**/data/**
+# Pycharm
+.idea
