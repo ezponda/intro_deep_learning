@@ -1,0 +1,12 @@
+[project]
+name = "intro-deep-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+pytorch = [
+    "torch>=2.6.0",
+]
