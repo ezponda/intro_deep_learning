@@ -9,7 +9,7 @@ This repository contains all  the code used in the course.
 - **Module 2: Convolutional NN**: class/CNN
   - [Introduction_to_CNN.ipynb](./class/CNN/Introduction_to_CNN.ipynb): Introduction to CNN & Image Processing.
 - **Module 3: Recurrent NN**: class/RNN
-  - [Introduction_to_RNN_Time_Series.ipynb](./class/RNN/Introduction_to_RNN_Time_Series.ipynb): Introduction to Recurrent Neural Networks Applied to Time series.
+  - [Introduction_to_RNN_Time_Series.ipynb](class/keras/RNN/Introduction_to_RNN_Time_Series.ipynb): Introduction to Recurrent Neural Networks Applied to Time series.
 - **Module 4: NLP with Deep Learning**: class/NLP
 - **Module 5: Generative Models**: class/generative
 

@@ -1,7 +1,7 @@
 # Make PROJ_DIR the parent of this file
 PROJ_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-# Pytorch Environment
+# pytorch Environment
 # ---
 
 .PHONY: torch-env

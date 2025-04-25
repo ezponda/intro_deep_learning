@@ -4,7 +4,7 @@ FROM python:3.8-bullseye
 WORKDIR /build
 COPY requirements.txt /build/requirements.txt
 RUN pip install --upgrade pip \
-    && pip install -r requirements.txt \
+    && pip install -r initial-requirements.txt \
     && pip install tensorflow==2.9.0
 
 # Configurable ENV variables
