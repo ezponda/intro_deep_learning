@@ -57,3 +57,9 @@ You can upload the notebook directly in [Google Colab](https://colab.research.go
         <img src="https://i.ibb.co/xfJbPmL/github.png"  height="70px" style="padding-bottom:5px;"  />View Source on GitHub</a></td>
 </table>
     
+
+### Local Torch - Using Makefiles
+
+```bash
+make torch-env
+```
