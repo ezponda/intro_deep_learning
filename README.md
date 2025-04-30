@@ -104,3 +104,10 @@ This command maps the port 8888 inside Docker as port 4000 on your machine.
 
 Once your Docker image is up and running, you can access the Jupyter notebooks by visiting [http://localhost:4000](http://localhost:4000) in your web browser. You'll see a list of notebooks that you can click on to view, run, and interact with.
     
+<table align="center">
+ <td align="center">
+        <img src="https://i.ibb.co/2P3SLwK/colab.png"  style="padding-bottom:5px;" />Run in Google Colab</a></td>
+  <td align="center">
+        <img src="https://i.ibb.co/xfJbPmL/github.png"  height="70px" style="padding-bottom:5px;"  />View Source on GitHub</a></td>
+</table>
+    
