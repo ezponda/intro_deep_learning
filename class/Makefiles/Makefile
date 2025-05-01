@@ -9,7 +9,6 @@ clean:
 	rm -f final-requirements.txt
 
 create:
-	@echo "Creating virtual environment..."
 	@if [ ! -d "$(NEW_VENV)" ]; then \
   		echo "🔧 Creating virtual environment..."; python3 -m venv $(NEW_VENV); else \
 		echo "✅ Virtual environment already exists."; fi

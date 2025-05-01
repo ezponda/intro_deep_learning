@@ -10,3 +10,12 @@ dependencies = []
 pytorch = [
     "torch>=2.6.0",
 ]
+dev = [
+    "fastapi>=0.115.12",
+    "uvicorn>=0.34.2",
+]
+
+[tool.uv.workspace]
+members = [
+    "docs/Containers/01_simple_uv_example",
+]
