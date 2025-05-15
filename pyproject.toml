@@ -8,6 +8,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.10.1",
     "scikit-learn>=1.6.1",
+    "tqdm>=4.67.1",
 ]
 
 [dependency-groups]
@@ -18,8 +19,13 @@ dev = [
     "fastapi>=0.115.12",
     "uvicorn>=0.34.2",
 ]
+keras = [
+    "tensorflow>=2.19.0",
+    "tf-keras-vis>=0.8.7",
+]
 
 [tool.uv.workspace]
 members = [
     "docs/Containers/01_simple_uv_example",
+    "hackathon/pokedex",
 ]
