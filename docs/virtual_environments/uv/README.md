@@ -39,6 +39,12 @@ A tool for managing multiple Python versions on your system.
 
   # Linux
   curl https://pyenv.run | bash
+
+  # Windows
+  pip install pyenv-win --target $HOME\.pyenv
+  # add to User Environment PATH:
+  %USERPROFILE%\.pyenv\pyenv-win\bin
+  %USERPROFILE%\.pyenv\pyenv-win\shims
   ```
 
 - **Install a Python version**:
@@ -164,6 +170,8 @@ Great for Python packaging, reproducibility, and dependency resolution.
 - **Activate shell with environment**:
   ```bash
   poetry shell
+  # above is getting deprecated I belive
+  source $(poetry env info --path)/bin/activate
   ```
 
 📖 Docs: https://python-poetry.org/docs/
@@ -203,7 +211,7 @@ Use when you want complete reproducibility, including system-level dependencies.
 - **Install Docker**:
   https://docs.docker.com/get-docker/
 
-- **Basic `Dockerfile`**:
+- **Basic `Dockerfile`**:Ÿ
   ```dockerfile
   FROM python:3.11
 

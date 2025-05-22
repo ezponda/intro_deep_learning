@@ -18,6 +18,7 @@ setup: clean create
 	@$(NEW_VENV)/bin/pip install -r initial-requirements.txt
 
 add-deps: create
+@echo "Installing initial requirements..."
 	@$(NEW_VENV)/bin/pip install matplotlib
 
 freeze-env: create

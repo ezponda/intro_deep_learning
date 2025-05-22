@@ -15,6 +15,12 @@ async def hello(name: str):
     return {"message": f"Hello {name}"}
 
 
+@app.post("/classify/{image_url}")
+async def classify(image_url: str):
+    # TODO: Implement image classification
+    return {"message": "Your image is a cat"}
+
+
 if __name__ == "__main__":
     import uvicorn
 
@@ -22,5 +28,4 @@ if __name__ == "__main__":
         "main:app",
         host="0.0.0.0",
         port=8000,
-        reload=True,
     )

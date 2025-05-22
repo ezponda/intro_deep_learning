@@ -11,11 +11,17 @@ docker-build:
 docker-run:
 	@echo "Running Docker container..."
 	@docker run -it --rm \
-		-v $(PROJ_DIR):/app \
+		-p 8000:8000 \
 		--name sample-app \
 		$(IMAGE_NAME)
 
 docker-run-shell:
+	@echo "Running Docker container with shell..."
+	@docker run -it --rm \
+		--name sample-app \
+		$(IMAGE_NAME) /bin/bash
+
+docker-run-shell-with-volume:
 	@echo "Running Docker container with shell..."
 	@docker run -it --rm \
 		-v $(PROJ_DIR):/app \
@@ -61,4 +67,3 @@ docker-shell:
 docker-logs:
 	@echo "Viewing logs of Docker container..."
 	@docker logs sample-app
-
