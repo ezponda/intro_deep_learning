@@ -131,7 +131,7 @@ dmypy.json
 
 # Don't store notebook changes when running locally
 # Comment when changes to notebooks want to be kept
-*.ipynb
+# *.ipynb
 
 # JetBrains IDEs
 .idea/
