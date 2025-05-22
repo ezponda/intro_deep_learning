@@ -69,6 +69,11 @@ def compute_embeddings(
     return embeddings
 
 
+def export_embeddings_to_pickle(embeddings, path):
+    with open(path, "wb") as f:
+        pickle.dump(embeddings, f)
+
+
 # 5. Save to .pkl file
 if __name__ == "__main__":
 

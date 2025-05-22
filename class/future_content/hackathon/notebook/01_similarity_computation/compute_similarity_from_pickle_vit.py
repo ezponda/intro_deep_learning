@@ -59,10 +59,25 @@ def get_embedding(model, img_path):
 def cosine_similarity(a, b):
     """
     Compute cosine similarity between two vectors.
+    Args:
+        a, b: Input vectors (numpy arrays or tensors)
+    Returns:
+        float: Cosine similarity score between 0 and 1
     """
-    a = torch.tensor(a)
-    b = torch.tensor(b)
-    return torch.nn.functional.cosine_similarity(a, b, dim=0).item()
+    # Convert to tensors and ensure they're on the same device
+    a = torch.tensor(a, dtype=torch.float32)
+    b = torch.tensor(b, dtype=torch.float32)
+    
+    # Ensure vectors are 1D
+    a = a.reshape(-1)
+    b = b.reshape(-1)
+    
+    # Normalize vectors
+    a_norm = a / torch.norm(a)
+    b_norm = b / torch.norm(b)
+    
+    # Compute dot product of normalized vectors
+    return torch.dot(a_norm, b_norm).item()
 
 # --- Single Image Similarity ---
 def compute_similarity_for_image(img_path, expected_label, model, db):
@@ -77,16 +92,22 @@ def compute_similarity_for_image(img_path, expected_label, model, db):
     """
     print(f"\n🔍 Testing image: {img_path}")
     try:
+        # Get embedding for test image
         test_emb = get_embedding(model, img_path)
+        # print(f"Test embedding shape: {test_emb.shape}")  # Debug print
 
+        # Compute similarities with all database entries
         similarities = []
         for entry in db:
-            sim = cosine_similarity(test_emb, entry["embedding"])
+            db_emb = entry["embedding"]
+            # print(f"DB embedding shape: {db_emb.shape}")  # Debug print
+            sim = cosine_similarity(test_emb, db_emb)
             similarities.append((entry["label"], sim))
 
         # Sort by similarity, descending
         similarities.sort(key=lambda x: x[1], reverse=True)
 
+        # Display results
         print(f"Expected: {expected_label}")
         print("Top matches:")
         for label, score in similarities[:5]:
@@ -94,6 +115,8 @@ def compute_similarity_for_image(img_path, expected_label, model, db):
 
     except Exception as e:
         print(f"❌ Error processing {img_path}: {str(e)}")
+        import traceback
+        traceback.print_exc()  # Print full error traceback for debugging
 
 # --- Dataset Loop ---
 def compute_similarity_for_dataset(test_dir, db_path):
