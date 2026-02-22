@@ -27,6 +27,7 @@ The content in this repository is divided into five key modules, focusing on var
   - [cat_vs_dogs](./class/CNN/cat_vs_dogs.ipynb): Binary image classification with hyperparameter tuning.
   - [Visualizing_What_CNNs_Learn](./class/CNN/Visualizing_What_CNNs_Learn.ipynb): Feature maps, Grad-CAM and saliency maps.
   - [OCR_with_OpenCV_and_Tesseract](./class/CNN/OCR_with_OpenCV_and_Tesseract.ipynb): Optical Character Recognition with Tesseract.
+  - [OCR_with_EasyOCR_and_TrOCR](./class/CNN/OCR_with_EasyOCR_and_TrOCR.ipynb): Modern OCR with EasyOCR and TrOCR (transformer-based).
   - [Object_Detection_YOLO_ultralytics](./class/CNN/Object_Detection_YOLO_ultralytics.ipynb): Object detection with YOLO and Ultralytics.
   - [Object_Tracking_Counting](./class/CNN/Object_Tracking_Counting.ipynb): Object tracking and counting with YOLO.
   - [Siamese_net](./class/CNN/Siamese_net.ipynb): Siamese networks for similarity learning.
