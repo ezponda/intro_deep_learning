@@ -13,21 +13,36 @@ Welcome to the GitHub repository for the Practical Deep Learning Course. Here yo
 The content in this repository is divided into five key modules, focusing on various aspects of **Deep Learning**. Each module includes Jupyter notebooks combining theory, code, and explanations.
 
 - **Module 1: Deep Learning Fundamentals**: [`class/Fundamentals`](./class/Fundamentals)
-  - [NN_Fundamentals](./class/Fundamentals/NN_Fundamentals.ipynb): This notebook introduces the basics of Deep Learning using TensorFlow. You will learn about TensorFlow's Sequential and Functional API, which are key tools for building neural networks.
-  - [Prevent_Overfitting](./class/Fundamentals/Prevent_Overfitting.ipynb): Here we explore various Regularization Techniques that can prevent overfitting in neural networks.
+  - [First_Model](./class/Fundamentals/First_Model.ipynb): First neural network — MNIST handwritten digit classification.
+  - [NN_Fundamentals](./class/Fundamentals/NN_Fundamentals.ipynb): Neural network basics with decision boundary visualization on toy datasets.
+  - [IMBD_sentiment_binary_classification](./class/Fundamentals/IMBD_sentiment_binary_classification.ipynb): Binary sentiment classification on movie reviews.
+  - [Prevent_Overfitting](./class/Fundamentals/Prevent_Overfitting.ipynb): Regularization techniques (Dropout, L1/L2, Early Stopping) to prevent overfitting.
+  - [Regression_tuner](./class/Fundamentals/Regression_tuner.ipynb): Regression with hyperparameter optimization using Keras Tuner.
 
 - **Module 2: Convolutional Neural Networks (CNNs)**: [`class/CNN`](./class/CNN)
-  - [Introduction_to_CNN.ipynb](./class/CNN/Introduction_to_CNN.ipynb): This notebook provides an introduction to Convolutional Neural Networks (CNNs) and their applications in Image Processing.
+  - [Introduction_to_CV_with_Pillow](./class/CNN/Introduction_to_CV_with_Pillow.ipynb): Image manipulation and processing with Pillow.
+  - [Introduction_to_CV_with_OpenCV](./class/CNN/Introduction_to_CV_with_OpenCV.ipynb): Computer vision basics using OpenCV.
+  - [Introduction_to_CNN](./class/CNN/Introduction_to_CNN.ipynb): Convolution operations, CNN architectures, transfer learning and data augmentation.
+  - [Classical_Architectures_CNN](./class/CNN/Classical_Architectures_CNN.ipynb): Classic CNN architectures (LeNet, AlexNet, VGG, ResNet, Inception).
+  - [cat_vs_dogs](./class/CNN/cat_vs_dogs.ipynb): Binary image classification with hyperparameter tuning.
+  - [Visualizing_What_CNNs_Learn](./class/CNN/Visualizing_What_CNNs_Learn.ipynb): Feature maps, Grad-CAM and saliency maps.
+  - [OCR_with_OpenCV_and_Tesseract](./class/CNN/OCR_with_OpenCV_and_Tesseract.ipynb): Optical Character Recognition with Tesseract.
+  - [Object_Detection_YOLO_ultralytics](./class/CNN/Object_Detection_YOLO_ultralytics.ipynb): Object detection with YOLO and Ultralytics.
+  - [Object_Tracking_Counting](./class/CNN/Object_Tracking_Counting.ipynb): Object tracking and counting with YOLO.
+  - [Siamese_net](./class/CNN/Siamese_net.ipynb): Siamese networks for similarity learning.
 
 - **Module 3: Recurrent Neural Networks (RNNs)**: [`class/RNN`](./class/RNN)
-  - [Introduction_to_RNN_Time_Series.ipynb](./class/RNN/Introduction_to_RNN_Time_Series.ipynb): Here we introduce Recurrent Neural Networks (RNNs) and show how they can be used for Time Series Analysis.
+  - [Introduction_to_RNN_Time_Series](./class/RNN/Introduction_to_RNN_Time_Series.ipynb): RNN fundamentals and time series prediction.
+  - [IMBD_RNN](./class/RNN/IMBD_RNN.ipynb): Sentiment classification using RNNs.
+  - [Character-level_text_generation_with_RNN](./class/RNN/Character-level_text_generation_with_RNN.ipynb): Character-level text generation.
+  - [Seq2seq](./class/RNN/Seq2seq.ipynb): Sequence-to-sequence models.
+  - [img2seq](./class/RNN/img2seq.ipynb): Image-to-sequence model (CAPTCHA solving).
 
 - **Module 4: Natural Language Processing (NLP) with Deep Learning**: [`class/NLP`](./class/NLP)
-  - [text_classification_rnn.ipynb](./class/NLP/text_classification_rnn.ipynb): This notebook provides an introduction to the embedding layer for text classification using RNNs and CNNs.
-  - [semantic_search_QA_clustering.ipynb](./class/NLP/semantic_search_QA_clustering.ipynb): In this notebook explores how Sentence Transformers can be utilized for Semantic Search and Question-Answering tasks.
-  - [Image_search.ipynb](./class/NLP/Image_search.ipynb):  This notebook explores the application of Sentence Transformers and the CLIP model to create an Image Search engine. You will learn how to leverage these models to associate textual descriptions with images, enabling image search capabilities.
-
-- **Module 5: Generative Models**: [`class/generative`](./class/generative)
+  - [Embedding_layer](./class/NLP/Embedding_layer.ipynb): Word embeddings for text representation.
+  - [text_classification_rnn](./class/NLP/text_classification_rnn.ipynb): Text classification using RNNs and CNNs.
+  - [semantic_search_QA_clustering](./class/NLP/semantic_search_QA_clustering.ipynb): Semantic search and question-answering with Sentence Transformers.
+  - [Image_search](./class/NLP/Image_search.ipynb): Image search using CLIP and Sentence Transformers.
 
 In addition to these practical modules, we provide a brief theoretical overview in the [Deep Learning with TensorFlow notebook](./Deep_learning_with_Tensorflow.ipynb). This resource offers a concise recap of essential deep learning concepts, acting as a handy reference guide.
 

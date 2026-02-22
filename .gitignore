@@ -131,3 +131,20 @@ dmypy.json
 
 # Pycharm
 .idea
+
+# Model weights
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.onnx
+
+# Notebook artifacts (downloaded images, generated files)
+class/**/*.jpg
+class/**/*.jpeg
+class/**/*.png
+class/**/*.gif
+class/**/*.mp4
+
+# Claude Code
+.claude/
