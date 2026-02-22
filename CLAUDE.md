@@ -32,7 +32,7 @@ Never use external image URLs (Wikipedia, ibb.co, Dreamstime, etc.) - they break
 
 ### Pip installs
 
-Keep `!pip install` commands visible (not commented out). Students on Colab need them.
+Keep `!pip install` commands commented out. The install instructions are shown in a markdown cell so students know what to run.
 
 ### Deprecated APIs to avoid
 
