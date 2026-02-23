@@ -31,6 +31,8 @@ The content in this repository is divided into five key modules, focusing on var
   - [Object_Detection_YOLO_ultralytics](./class/CNN/Object_Detection_YOLO_ultralytics.ipynb): Object detection with YOLO and Ultralytics.
   - [Object_Tracking_Counting](./class/CNN/Object_Tracking_Counting.ipynb): Object tracking and counting with YOLO.
   - [Siamese_net](./class/CNN/Siamese_net.ipynb): Siamese networks for similarity learning.
+  - [CLIP_Zero_Shot_Classification](./class/CNN/CLIP_Zero_Shot_Classification.ipynb): Zero-shot image classification with CLIP (no training needed).
+  - [Image_Segmentation_with_HuggingFace](./class/CNN/Image_Segmentation_with_HuggingFace.ipynb): Skin lesion segmentation with SegFormer and the Hugging Face ecosystem.
 
 - **Module 3: Recurrent Neural Networks (RNNs)**: [`class/RNN`](./class/RNN)
   - [Introduction_to_RNN_Time_Series](./class/RNN/Introduction_to_RNN_Time_Series.ipynb): RNN fundamentals and time series prediction.
