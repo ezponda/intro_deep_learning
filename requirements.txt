@@ -1,11 +1,57 @@
-matplotlib==3.6.2
-numpy==1.23.5
-opencv_python==4.7.0.68
-pandas==1.5.2
-Pillow==9.5.0
-scikit_learn==1.2.2
-sentence_transformers==2.2.2
-tensorflow==2.11.0
-tensorflow_hub==0.13.0
-torch==2.0.0
-tqdm==4.64.1
+# Core ML frameworks
+tensorflow
+torch
+torchvision
+torchaudio
+
+# Data & visualization
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+
+# Scikit-learn
+scikit-learn
+
+# Image processing
+Pillow
+opencv-python
+
+# TensorFlow ecosystem
+tensorflow-datasets
+tensorflow-hub
+keras-tuner
+tf-keras-vis
+
+# Hugging Face ecosystem
+transformers
+datasets
+evaluate
+accelerate
+sentencepiece
+sentence-transformers
+
+# YOLO / Ultralytics
+ultralytics
+lapx
+
+# OCR
+easyocr
+pytesseract
+
+# NLP / text
+beautifulsoup4
+
+# Time series
+yfinance
+
+# RNN extras
+captcha
+wavio
+
+# Utilities
+tqdm
+requests
+ipywidgets
+ipython
